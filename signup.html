@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav {
+            /* display: flex; */
+            height: 45px;
+            width: 100%;
+            background-color: burlywood;
+
+        }
+
+        .nav>p {
+            font-size: 25px;
+            margin-left: 50px;
+            margin-bottom: -35px;
+        }
+
+        .nav>ul {
+            float: right;
+
+        }
+
+        .nav>ul>li {
+            text-decoration: none;
+            display: inline;
+            margin-right: 50px;
+            font-size: 25px;
+            line-height: 50px;
+            /* margin-top: -50px; */
+            /* display: block; */
+        }
+
+        .nav>ul>li>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav>p>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .signup-div {
+            height: 450px;
+            width: 350px;
+            background-color: chocolate;
+            text-align: center;
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+
+        .signupform {
+            font-size: 25px;
+
+        }
+
+        .signupform>input {
+            width: 80%;
+            height: 30px;
+            /* font-size: 25px; */
+            border-radius: 5px;
+            border: none;
+            /* margin-top: 20px 0; */
+            margin: 15px 0px;
+        }
+
+        .signupform>button {
+            width: 70%;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            font-size: 25px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <p> <a href="index.html">Food Hub</a> </p>
+        <ul>
+            <li><a href="login.html">Login</a> </li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </div>
+    <div class="signup-div">
+        <form id="signup-form" class="signupform">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Input Name"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+            <button type="submit" onclick="signupcheck(event)">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+<script src="signup.js"></script>
